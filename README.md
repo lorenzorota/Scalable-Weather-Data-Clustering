@@ -1,4 +1,4 @@
-# Scalable Clustering Project
+# Scalable Weather Data Clustering Project
 
 A data processing pipeline for clustering weather data.
 
