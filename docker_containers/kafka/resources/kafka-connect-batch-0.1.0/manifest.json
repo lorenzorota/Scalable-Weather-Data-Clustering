@@ -1,0 +1,25 @@
+{
+  "name" : "kafka-connect-batch",
+  "version" : "0.1.0",
+  "title" : "kafka-connect-batch",
+  "description" : "Kafka Connect Source Connector for Batch Processing",
+  "owner" : {
+    "username" : "epic"
+  },
+  "support" : { },
+  "tags" : [ "secondTag", "firstTag" ],
+  "features" : {
+    "supported_encodings" : [ "any" ],
+    "single_message_transforms" : true,
+    "confluent_control_center_integration" : false,
+    "kafka_connect_api" : true
+  },
+  "source_url" : "https://github.com/you/kafka-connect-sample",
+  "docker_image" : { },
+  "license" : [ {
+    "name" : "The Apache License, Version 2.0",
+    "url" : "https://www.apache.org/licenses/LICENSE-2.0"
+  } ],
+  "component_types" : [ "source" ],
+  "release_date" : "2022-03-30"
+}

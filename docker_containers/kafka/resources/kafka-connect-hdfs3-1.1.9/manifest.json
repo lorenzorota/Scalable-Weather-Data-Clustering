@@ -1,0 +1,34 @@
+{
+  "name" : "kafka-connect-hdfs3",
+  "version" : "1.1.9",
+  "title" : "Kafka Connect HDFS 3",
+  "description" : "The HDFS 3 connector allows you to export data from Kafka topics to HDFS 3.x files in a variety of formats and integrates with Hive to make data immediately available for querying with HiveQL.\n\nThe connector periodically polls data from Kafka and writes them to an HDFS 3.x cluster. The data from each Kafka topic is partitioned by the provided partitioner and divided into chunks. Each chunk of data is represented as an HDFS file with topic, Kafka partition, start and end offsets of this data chunk in the filename. If no partitioner is specified in the configuration, the default partitioner which preserves the Kafka partitioning is used. The size of each data chunk is determined by the number of records written to HDFS, the time written to HDFS and schema compatibility.\n\nThe HDFS connector integrates with Hive and when it is enabled, the connector automatically creates an external Hive partitioned table for each Kafka topic and updates the table according to the available data in HDFS.",
+  "owner" : {
+    "username" : "confluentinc",
+    "type" : "organization",
+    "name" : "Confluent, Inc.",
+    "url" : "http://confluent.io",
+    "logo" : "assets/confluent.png"
+  },
+  "support" : {
+    "summary" : "This connector is a Confluent Commercial Connector and <a href=\"https://www.confluent.io/subscription/\">supported by Confluent</a>. The <connector-name> requires purchase of a <a href=\"https://www.confluent.io/product/confluent-platform/\">Confluent Platform</a> subscription, including a license to this Commercial Connector. You can also use this connector for a 30-day trial without an enterprise license key - after 30 days, you need to purchase a subscription. Please contact your Confluent account manager for details.",
+    "url" : "http://confluent.io/subscription/",
+    "logo" : "assets/confluent.png",
+    "provider_name" : "Confluent, Inc."
+  },
+  "tags" : [ "hive", "hdfs3", "hdfs", "hadoop", "hadoop3" ],
+  "features" : {
+    "supported_encodings" : [ "any" ],
+    "single_message_transforms" : true,
+    "confluent_control_center_integration" : true,
+    "kafka_connect_api" : true
+  },
+  "documentation_url" : "https://docs.confluent.io/kafka-connect-hdfs3-sink/current/index.html",
+  "docker_image" : { },
+  "license" : [ {
+    "name" : "Confluent Software Evaluation License",
+    "url" : "https://www.confluent.io/software-evaluation-license"
+  } ],
+  "component_types" : [ "sink" ],
+  "release_date" : "2022-01-27"
+}

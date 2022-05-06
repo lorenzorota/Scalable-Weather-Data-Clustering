@@ -1,0 +1,102 @@
+---- fetch avro stream ----
+
+kafka-avro-console-consumer \
+    --bootstrap-server kafka:9092 \
+    --property schema.registry.url=http://localhost:8085 \
+    --topic common \
+    --from-beginning \
+    --max-messages 10
+
+---- (test) create dummy avro stream ----
+
+kafka-avro-console-producer \
+    --broker-list kafka:9092 \
+    --property schema.registry.url=http://localhost:8085 \
+    --topic common \
+    --property value.schema='{"type":"record","name":"myrecord","fields":[{"name":"f1","type":"string"}]}'
+
+
+
+---- get offset of sink-connector ----
+
+kafka-consumer-groups \
+    --bootstrap-server kafka:9092 \
+    --group connect-batch-sink --describe
+
+
+kafka-consumer-groups \
+    --bootstrap-server kafka:9092 \
+    --group connect-stream-sink --describe
+
+
+---- reset offset of sink-connector ----
+
+kafka-consumer-groups \
+    --bootstrap-server kafka:9092 \
+    --group connect-batch-sink --topic common:0 \
+    --reset-offsets --to-earliest --execute
+
+kafka-consumer-groups \
+    --bootstrap-server kafka:9092 \
+    --group connect-stream-sink --topic stream:0 \
+    --reset-offsets --to-earliest --execute
+
+
+
+---- Run stream processing source-connector ----
+
+curl -X POST -H "Content-Type:application/json" -d @examples/stream-source.json http://localhost:8083/connectors
+
+
+---- Run batch processing source-connector ----
+
+curl -X POST -H "Content-Type:application/json" -d @examples/batch-source.json http://localhost:8083/connectors
+
+
+---- Run stream processing sink-connector ----
+
+curl -X POST -H "Content-Type:application/json" -d @examples/stream-sink.json http://localhost:8083/connectors
+
+---- Run batch processing sink-connector ----
+
+curl -X POST -H "Content-Type:application/json" -d @examples/batch-sink.json http://localhost:8083/connectors
+
+
+
+---- Stop stream processing source-connector ----
+
+curl -X DELETE http://localhost:8083/connectors/stream-source
+
+
+---- Stop batch processing source-connector ----
+
+curl -X DELETE http://localhost:8083/connectors/batch-source
+
+
+---- Stop stream processing sink-connector ----
+
+curl -X DELETE http://localhost:8083/connectors/stream-sink
+
+---- Stop batch processing sink-connector ----
+
+curl -X DELETE http://localhost:8083/connectors/batch-sink
+
+
+
+---- Check workers of source-connector ----
+
+curl localhost:8083/connectors/batch-source/status
+
+curl localhost:8083/connectors/batch-sink/status
+
+
+
+---- Delete topic ----
+
+kafka-topics \
+    --bootstrap-server kafka:9092 \
+    --delete --topic common
+
+kafka-topics \
+    --bootstrap-server kafka:9092 \
+    --delete --topic stream

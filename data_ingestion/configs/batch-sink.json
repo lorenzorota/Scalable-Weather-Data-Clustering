@@ -1,0 +1,16 @@
+{
+    "name": "batch-sink",
+    "config": {
+        "connector.class": "io.confluent.connect.hdfs3.Hdfs3SinkConnector",
+        "tasks.max": "25",
+        "topics": "common",
+        "hdfs.url": "hdfs://namenode:9000/user/root",
+        "flush.size": "10000",
+        "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+        "value.converter": "io.confluent.connect.avro.AvroConverter",
+        "value.converter.schemas.enable": "true",
+        "value.converter.schema.registry.url":"http://schemaregistry:8085",
+        "confluent.topic.bootstrap.servers": "kafka:9092",
+        "confluent.topic.replication.factor": "1"
+    }
+}

@@ -1,0 +1,665 @@
+<HTML><HEAD><style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+}
+h1 {
+    font-family: sans-serif;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+thead td {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #000000;
+    color: white;
+}
+</style></HEAD><BODY>
+<H1> kafka-connect-hdfs3</H1><br>
+<TABLE border="1">
+<THEAD>
+<TR>
+<TD>Artifact</TD><TD>Type</TD><TD>Version</TD><TD>License(s)</TD></TR>
+</THEAD>
+<TBODY>
+<TR>
+<TD>tephra-api-0.6.0</TD><TD>jar</TD><TD>0.6.0</TD><TD></TD></TR>
+<TR>
+<TD>tephra-core-0.6.0</TD><TD>jar</TD><TD>0.6.0</TD><TD></TD></TR>
+<TR>
+<TD>tephra-hbase-compat-1.0-0.6.0</TD><TD>jar</TD><TD>0.6.0</TD><TD></TD></TR>
+<TR>
+<TD>hppc-0.7.2</TD><TD>jar</TD><TD>0.7.2</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/jdereg/java-util">java-util-1.9.0</A></TD><TD>jar</TD><TD>1.9.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/jdereg/json-io">json-io-2.5.1</A></TD><TD>jar</TD><TD>2.5.1</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/Esri/geometry-api-java">esri-geometry-api-2.0.0</A></TD><TD>jar</TD><TD>2.0.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://github.com/FasterXML/jackson">jackson-annotations-2.9.0</A></TD><TD>jar</TD><TD>2.9.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/FasterXML/jackson-core">jackson-core-2.9.6</A></TD><TD>jar</TD><TD>2.9.6</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://github.com/FasterXML/jackson">jackson-databind-2.9.6</A></TD><TD>jar</TD><TD>2.9.6</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>jackson-jaxrs-base-2.7.8</TD><TD>jar</TD><TD>2.7.8</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>jackson-jaxrs-json-provider-2.7.8</TD><TD>jar</TD><TD>2.7.8</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://github.com/FasterXML/jackson-module-jaxb-annotations">jackson-module-jaxb-annotations-2.7.8</A></TD><TD>jar</TD><TD>2.7.8</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://fasterxml.com">woodstox-core-5.0.3</A></TD><TD>jar</TD><TD>5.0.3</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache License, Version 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/joshelser/dropwizard-hadoop-metrics2">dropwizard-metrics-hadoop-metrics2-reporter-0.1.2</A></TD><TD>jar</TD><TD>0.1.2</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://stephenc.github.com/findbugs-annotations">findbugs-annotations-1.3.9-1</A></TD><TD>jar</TD><TD>1.3.9-1</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://stephenc.github.com/jcip-annotations">jcip-annotations-1.0-1</A></TD><TD>jar</TD><TD>1.0-1</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://findbugs.sourceforge.net/">jsr305-3.0.2</A></TD><TD>jar</TD><TD>3.0.2</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://avro.apache.org">avro-1.8.1</A></TD><TD>jar</TD><TD>11.0.2</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>guava-20.0</TD><TD>jar</TD><TD>20.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>hbase-shaded-protobuf-1.0.1</TD><TD>jar</TD><TD>3.3.1</TD><TD><A HREF="licenses/LICENSE-hbase-shaded-protobuf-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="http://code.google.com/p/protobuf">protobuf-java-2.5.0</A></TD><TD>jar</TD><TD>2.5.0</TD><TD><A HREF="http://www.opensource.org/licenses/bsd-license.php">New BSD license</A><br><A HREF="http://www.opensource.org/licenses/bsd-license.php">link from artifact (META-INF/maven/com.google.protobuf/protobuf-java/pom.xml)</A><br></TD></TR>
+<TR>
+<TD>hbase-shaded-miscellaneous-1.0.1</TD><TD>jar</TD><TD>3.3.0</TD><TD><A HREF="licenses/LICENSE-hbase-shaded-miscellaneous-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>protobuf-java-util-3.4.0</TD><TD>jar</TD><TD>3.4.0</TD><TD><A HREF="https://opensource.org/licenses/BSD-3-Clause">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://github.com/google/re2j">re2j-1.1</A></TD><TD>jar</TD><TD>1.1</TD><TD><A HREF="https://golang.org/LICENSE">The Go license</A><br></TD></TR>
+<TR>
+<TD>bonecp-0.8.0.RELEASE</TD><TD>jar</TD><TD>0.8.0.RELEASE</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/Microsoft/mssql-jdbc">mssql-jdbc-6.2.1.jre7</A></TD><TD>jar</TD><TD>6.2.1.jre7</TD><TD><A HREF="http://www.opensource.org/licenses/mit-license.php">MIT License</A><br><A HREF="http://www.opensource.org/licenses/mit-license.php">The MIT License</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://bitbucket.org/connect2id/nimbus-jose-jwt">nimbus-jose-jwt-4.41.1</A></TD><TD>jar</TD><TD>4.41.1</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>okhttp-2.7.5</TD><TD>jar</TD><TD>2.7.5</TD><TD></TD></TR>
+<TR>
+<TD>okio-1.6.0</TD><TD>jar</TD><TD>1.6.0</TD><TD></TD></TR>
+<TR>
+<TD>jersey-client-1.19</TD><TD>jar</TD><TD>1.19</TD><TD><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html, http://glassfish.java.net/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>jersey-core-1.19</TD><TD>jar</TD><TD>1.19</TD><TD><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html, http://glassfish.java.net/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>jersey-json-1.19</TD><TD>jar</TD><TD>1.19</TD><TD><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html, http://glassfish.java.net/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>jersey-server-1.19</TD><TD>jar</TD><TD>1.19</TD><TD><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html, http://glassfish.java.net/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>jersey-servlet-1.19</TD><TD>jar</TD><TD>1.19</TD><TD><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html, http://glassfish.java.net/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>jersey-guice-1.19</TD><TD>jar</TD><TD>1.19</TD><TD><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html, http://glassfish.java.net/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/tdunning/open-json">json-1.8</A></TD><TD>jar</TD><TD>1.8</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>paranamer-2.7</TD><TD>jar</TD><TD>2.7</TD><TD>LICENSE.txt<br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/vy/flatbuffers">flatbuffers-1.2.0-3f79e055</A></TD><TD>jar</TD><TD>1.2.0-3f79e055</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0">Apache License (v2.0)</A><br></TD></TR>
+<TR>
+<TD>memory-0.9.0</TD><TD>jar</TD><TD>0.9.0</TD><TD></TD></TR>
+<TR>
+<TD>sketches-core-0.9.0</TD><TD>jar</TD><TD>0.9.0</TD><TD></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/brettwooldridge/HikariCP">HikariCP-2.6.1</A></TD><TD>jar</TD><TD>2.6.1</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/brettwooldridge/HikariCP">HikariCP-java7-2.4.12</A></TD><TD>jar</TD><TD>2.4.12</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://commons.apache.org/proper/commons-beanutils/">commons-beanutils-1.9.3</A></TD><TD>jar</TD><TD>1.9.3</TD><TD><A HREF="https://www.apache.org/licenses/LICENSE-2.0.txt">link from artifact (included file)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/cli/">commons-cli-1.2</A></TD><TD>jar</TD><TD>1.2</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/codec/">commons-codec-1.5</A></TD><TD>jar</TD><TD>1.5</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/collections/">commons-collections-3.2.2</A></TD><TD>jar</TD><TD>3.2.2</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/daemon/">commons-daemon-1.0.13</A></TD><TD>jar</TD><TD>1.0.13</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/dbcp/">commons-dbcp-1.4</A></TD><TD>jar</TD><TD>1.4</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/proper/commons-io/">commons-io-2.5</A></TD><TD>jar</TD><TD>2.5</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/lang/">commons-lang-2.6</A></TD><TD>jar</TD><TD>2.6</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/proper/commons-logging/">commons-logging-1.1.3</A></TD><TD>jar</TD><TD>1.1.3</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/logging">htrace-core-3.2.0-incubating</A></TD><TD>jar</TD><TD>1.1.1</TD><TD><A HREF="licenses/LICENSE-htrace-core-3.2.0-incubating.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/logging">htrace-core4-4.1.0-incubating</A></TD><TD>jar</TD><TD>1.1.1</TD><TD><A HREF="licenses/LICENSE-htrace-core4-4.1.0-incubating.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/proper/commons-net/">commons-net-3.6</A></TD><TD>jar</TD><TD>3.6</TD><TD><A HREF="https://www.apache.org/licenses/LICENSE-2.0.txt">link from artifact (included file)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/pool/">commons-pool-1.5.4</A></TD><TD>jar</TD><TD>1.5.4</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://ruedigermoeller.github.io/fast-serialization/">fst-2.50</A></TD><TD>jar</TD><TD>2.50</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">link from artifact (META-INF/maven/de.ruedigermoeller/fst/pom.xml)</A><br><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.dnsjava.org">dnsjava-2.1.7</A></TD><TD>jar</TD><TD>2.1.7</TD><TD><A HREF="http://opensource.org/licenses/BSD-2-Clause">BSD 2-Clause license</A><br><A HREF="http://opensource.org/licenses/BSD-2-Clause">link from artifact (META-INF/maven/dnsjava/dnsjava/pom.xml)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://github.com/airlift/aircompressor">aircompressor-0.10</A></TD><TD>jar</TD><TD>0.10</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>common-config-5.2.2</TD><TD>jar</TD><TD>5.2.2</TD><TD></TD></TR>
+<TR>
+<TD>common-utils-5.2.2</TD><TD>jar</TD><TD>5.2.2</TD><TD></TD></TR>
+<TR>
+<TD>confluent-licensing-new-5.2.2</TD><TD>jar</TD><TD>5.2.2</TD><TD></TD></TR>
+<TR>
+<TD>confluent-serializers-new-5.2.2</TD><TD>jar</TD><TD>5.2.2</TD><TD></TD></TR>
+<TR>
+<TD>connect-licensing-extensions-0.3.2</TD><TD>jar</TD><TD>0.3.2</TD><TD></TD></TR>
+<TR>
+<TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">kafka-avro-serializer-5.2.2</A></TD><TD>jar</TD><TD>5.2.2</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">kafka-connect-avro-converter-5.2.2</A></TD><TD>jar</TD><TD>5.2.2</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://confluent.io">kafka-connect-hdfs3-1.0.0-SNAPSHOT</A></TD><TD>jar</TD><TD>1.0.0-SNAPSHOT</TD><TD><A HREF="https://www.confluent.io/software-evaluation-license">Confluent Software Evaluation License</A><br></TD></TR>
+<TR>
+<TD>kafka-connect-storage-common-5.2.2</TD><TD>jar</TD><TD>5.2.2</TD><TD></TD></TR>
+<TR>
+<TD>kafka-connect-storage-core-5.2.2</TD><TD>jar</TD><TD>5.2.2</TD><TD></TD></TR>
+<TR>
+<TD>kafka-connect-storage-format-5.2.2</TD><TD>jar</TD><TD>5.2.2</TD><TD></TD></TR>
+<TR>
+<TD>kafka-connect-storage-hive-5.2.2</TD><TD>jar</TD><TD>5.2.2</TD><TD></TD></TR>
+<TR>
+<TD>kafka-connect-storage-partitioner-5.2.2</TD><TD>jar</TD><TD>5.2.2</TD><TD></TD></TR>
+<TR>
+<TD>kafka-connect-storage-wal-5.2.2</TD><TD>jar</TD><TD>5.2.2</TD><TD></TD></TR>
+<TR>
+<TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">kafka-schema-registry-client-5.2.2</A></TD><TD>jar</TD><TD>5.2.2</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>metrics-core-3.1.0</TD><TD>jar</TD><TD>3.1.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>metrics-json-3.1.0</TD><TD>jar</TD><TD>3.1.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>metrics-jvm-3.1.0</TD><TD>jar</TD><TD>3.1.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://netty.io/">netty-3.10.6.Final</A></TD><TD>jar</TD><TD>3.10.6.Final</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>netty-all-4.0.52.Final</TD><TD>jar</TD><TD>4.0.52.Final</TD><TD></TD></TR>
+<TR>
+<TD>netty-buffer-4.0.52.Final</TD><TD>jar</TD><TD>4.0.52.Final</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://jcp.org/en/jsr/detail?id=250">javax.annotation-api-1.2</A></TD><TD>jar</TD><TD>1.2</TD><TD><A HREF="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html">link from artifact (META-INF/maven/javax.annotation/javax.annotation-api/pom.xml)</A><br><A HREF="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html">CDDL + GPLv2 with classpath exception</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://servlet-spec.java.net">javax.servlet-api-3.1.0</A></TD><TD>jar</TD><TD>3.1.0</TD><TD><A HREF="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html">CDDL + GPLv2 with classpath exception</A><br><A HREF="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html">link from artifact (META-INF/maven/javax.servlet/javax.servlet-api/pom.xml)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://blogs.sun.com/kchung/">javax.servlet.jsp-api-2.3.1</A></TD><TD>jar</TD><TD>2.3.1</TD><TD><A HREF="http://glassfish.dev.java.net/nonav/public/CDDL+GPL.html">link from artifact (META-INF/maven/javax.servlet.jsp/javax.servlet.jsp-api/pom.xml)</A><br><A HREF="http://glassfish.dev.java.net/nonav/public/CDDL+GPL.html">CDDL + GPLv2 with classpath exception</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://beanvalidation.org">validation-api-1.1.0.Final</A></TD><TD>jar</TD><TD>1.1.0.Final</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://jax-rs-spec.java.net">javax.ws.rs-api-2.0.1</A></TD><TD>jar</TD><TD>2.0.1</TD><TD><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html">GPL2 w/ CPE</A><br><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html">CDDL 1.1</A><br><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html, http://glassfish.java.net/public/CDDL+GPL_1_1.html">link from artifact (META-INF/maven/javax.ws.rs/javax.ws.rs-api/pom.xml)</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://jsr311.dev.java.net">jsr311-api-1.1.1</A></TD><TD>jar</TD><TD>1.1.1</TD><TD><A HREF="http://www.opensource.org/licenses/cddl1.php">link from artifact (META-INF/maven/javax.ws.rs/jsr311-api/pom.xml)</A><br><A HREF="http://www.opensource.org/licenses/cddl1.php">
+                CDDL License
+            </A><br></TD></TR>
+<TR>
+<TD><A HREF="http://download.oracle.com/javase/8/docs/api/">jaxb-api-2.3.0</A></TD><TD>jar</TD><TD>2.3.0</TD><TD><A HREF="https://oss.oracle.com/licenses/CDDL+GPL-1.1, https://oss.oracle.com/licenses/CDDL+GPL-1.1">link from artifact (included file)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://javolution.org">javolution-5.5.1</A></TD><TD>jar</TD><TD>5.5.1</TD><TD><A HREF="http://javolution.org/LICENSE.txt">link from artifact (META-INF/maven/javolution/javolution/pom.xml)</A><br><A HREF="http://javolution.org/LICENSE.txt">BSD License</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.opensource.org/licenses/bsd-license.php">jline-2.12.1</A></TD><TD>jar</TD><TD>2.12.1</TD><TD><A HREF="http://www.opensource.org/licenses/bsd-license.php">The BSD License</A><br><A HREF="http://www.opensource.org/licenses/bsd-license.php">link from artifact (META-INF/maven/jline/jline/pom.xml)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.joda.org/joda-time/">joda-time-2.9.6</A></TD><TD>jar</TD><TD>2.9.6</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://logging.apache.org/log4j/1.2/">log4j-1.2.17</A></TD><TD>jar</TD><TD>1.2.17</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.minidev.net/">accessors-smart-1.2</A></TD><TD>jar</TD><TD>1.2</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.minidev.net/">json-smart-2.3</A></TD><TD>jar</TD><TD>2.3</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://jpam.sf.net">jpam-1.1</A></TD><TD>jar</TD><TD>1.1</TD><TD><A HREF="http://jpam.sourceforge.net/LICENSE.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://opencsv.sf.net">opencsv-2.3</A></TD><TD>jar</TD><TD>2.3</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.stringtemplate.org">ST4-4.0.4</A></TD><TD>jar</TD><TD>4.0.4</TD><TD><A HREF="http://antlr.org/license.html">BSD licence</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.antlr.org">antlr-runtime-3.5.2</A></TD><TD>jar</TD><TD>3.5.2</TD><TD></TD></TR>
+<TR>
+<TD>arrow-format-0.8.0</TD><TD>jar</TD><TD>0.8.0</TD><TD><A HREF="licenses/LICENSE-arrow-format-0.8.0.txt">included file</A></TD></TR>
+<TR>
+<TD>arrow-memory-0.8.0</TD><TD>jar</TD><TD>0.8.0</TD><TD><A HREF="licenses/LICENSE-arrow-memory-0.8.0.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="https://repo.maven.apache.org/maven2/">arrow-vector-0.8.0</A></TD><TD>jar</TD><TD>0.8.0</TD><TD><A HREF="licenses/LICENSE-arrow-vector-0.8.0.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="http://avro.apache.org">avro-ipc-1.8.1</A></TD><TD>jar</TD><TD>1.8.1</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>avro-mapred-1.8.1</TD><TD>jar</TD><TD>1.8.1</TD><TD><A HREF="licenses/LICENSE-avro-mapred-1.8.1.txt">included file</A></TD></TR>
+<TR>
+<TD>calcite-core-1.16.0</TD><TD>jar</TD><TD>1.16.0</TD><TD><A HREF="licenses/LICENSE-calcite-core-1.16.0.txt">included file</A></TD></TR>
+<TR>
+<TD>calcite-druid-1.16.0</TD><TD>jar</TD><TD>1.16.0</TD><TD><A HREF="licenses/LICENSE-calcite-druid-1.16.0.txt">included file</A></TD></TR>
+<TR>
+<TD>calcite-linq4j-1.16.0</TD><TD>jar</TD><TD>1.16.0</TD><TD><A HREF="licenses/LICENSE-calcite-linq4j-1.16.0.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/proper/commons-collections/">commons-collections4-4.1</A></TD><TD>jar</TD><TD>4.1</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/proper/commons-compress/">commons-compress-1.9</A></TD><TD>jar</TD><TD>1.9</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/proper/commons-configuration/">commons-configuration2-2.1.1</A></TD><TD>jar</TD><TD>2.1.1</TD><TD><A HREF="https://www.apache.org/licenses/LICENSE-2.0.txt">link from artifact (included file)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/proper/commons-crypto/">commons-crypto-1.0.0</A></TD><TD>jar</TD><TD>1.0.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/proper/commons-lang/">commons-lang3-3.8.1</A></TD><TD>jar</TD><TD>3.8.1</TD><TD><A HREF="https://www.apache.org/licenses/LICENSE-2.0.txt">link from artifact (included file)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://commons.apache.org/math/">commons-math3-3.1.1</A></TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>curator-client-2.13.0</TD><TD>jar</TD><TD>2.13.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>curator-framework-2.12.0</TD><TD>jar</TD><TD>2.12.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>curator-recipes-2.13.0</TD><TD>jar</TD><TD>2.13.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://geronimo.apache.org/maven/${siteId}/${project.version}">geronimo-jcache_1.0_spec-1.0-alpha-1</A></TD><TD>jar</TD><TD>1.0-alpha-1</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>hadoop-annotations-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-annotations-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-archives-3.1.0</TD><TD>jar</TD><TD>3.1.0</TD><TD><A HREF="licenses/LICENSE-hadoop-archives-3.1.0.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-auth-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-auth-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-client-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-client-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-common-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-common-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-distcp-2.7.1</TD><TD>jar</TD><TD>2.7.1</TD><TD></TD></TR>
+<TR>
+<TD>hadoop-hdfs-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-hdfs-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-hdfs-client-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-hdfs-client-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-mapreduce-client-common-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-mapreduce-client-common-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-mapreduce-client-core-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-mapreduce-client-core-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-mapreduce-client-jobclient-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-mapreduce-client-jobclient-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-yarn-api-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-yarn-api-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-yarn-client-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-yarn-client-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-yarn-common-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-yarn-common-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-yarn-registry-3.1.0</TD><TD>jar</TD><TD>3.1.0</TD><TD><A HREF="licenses/LICENSE-hadoop-yarn-registry-3.1.0.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-yarn-server-applicationhistoryservice-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-yarn-server-applicationhistoryservice-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-yarn-server-common-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-yarn-server-common-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-yarn-server-resourcemanager-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-yarn-server-resourcemanager-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hadoop-yarn-server-web-proxy-3.1.2</TD><TD>jar</TD><TD>3.1.2</TD><TD><A HREF="licenses/LICENSE-hadoop-yarn-server-web-proxy-3.1.2.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-client-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-client-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-common-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-common-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-common-2.0.0-alpha4-tests</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-common-2.0.0-alpha4-tests.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-hadoop-compat-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-hadoop-compat-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-hadoop2-compat-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-hadoop2-compat-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-http-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-http-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-mapreduce-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-mapreduce-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-metrics-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-metrics-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-metrics-api-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-metrics-api-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-prefix-tree-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-prefix-tree-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-procedure-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-procedure-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-protocol-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-protocol-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-protocol-shaded-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-protocol-shaded-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-replication-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-replication-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD>hbase-server-2.0.0-alpha4</TD><TD>jar</TD><TD>2.0.0-alpha4</TD><TD><A HREF="licenses/LICENSE-hbase-server-2.0.0-alpha4.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="https://oss.sonatype.org/service/local/repositories/${stagingRepositoryId}/content/">hbase-shaded-netty-1.0.1</A></TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-hbase-shaded-netty-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-classification-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-classification-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-cli-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-cli-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-common-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-common-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-exec-3.1.1-core</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-exec-3.1.1-core.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-llap-client-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-llap-client-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-llap-common-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-llap-common-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-llap-common-3.1.1-tests</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-llap-common-3.1.1-tests.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-llap-server-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-llap-server-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-llap-tez-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-llap-tez-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-metastore-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-metastore-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-serde-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-serde-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-service-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-service-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-service-rpc-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-service-rpc-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-shims-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-shims-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-standalone-metastore-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-standalone-metastore-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-storage-api-2.7.0</TD><TD>jar</TD><TD>2.7.0</TD><TD><A HREF="licenses/LICENSE-hive-storage-api-2.7.0.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-upgrade-acid-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-upgrade-acid-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-vector-code-gen-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-vector-code-gen-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-hcatalog-core-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-hcatalog-core-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-shims-0.23-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-shims-0.23-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-shims-common-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-shims-common-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>hive-shims-scheduler-3.1.1</TD><TD>jar</TD><TD>3.1.1</TD><TD><A HREF="licenses/LICENSE-hive-shims-scheduler-3.1.1.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="http://hc.apache.org/httpcomponents-client">httpclient-4.5.2</A></TD><TD>jar</TD><TD>4.5.2</TD><TD><A HREF="licenses/LICENSE-httpclient-4.5.2.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="http://hc.apache.org/httpcomponents-core-ga">httpcore-4.4.4</A></TD><TD>jar</TD><TD>4.4.4</TD><TD><A HREF="licenses/LICENSE-httpcore-4.4.4.txt">included file</A></TD></TR>
+<TR>
+<TD>kerb-admin-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerb-admin-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kerb-client-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerb-client-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kerb-common-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerb-common-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kerb-core-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerb-core-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kerb-crypto-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerb-crypto-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kerb-identity-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerb-identity-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kerb-server-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerb-server-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kerb-simplekdc-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerb-simplekdc-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kerb-util-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerb-util-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kerby-asn1-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerby-asn1-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kerby-config-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerby-config-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kerby-pkix-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerby-pkix-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kerby-util-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerby-util-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kerby-xdr-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-kerby-xdr-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>token-provider-1.0.1</TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="licenses/LICENSE-token-provider-1.0.1.txt">included file</A></TD></TR>
+<TR>
+<TD>log4j-1.2-api-2.10.0</TD><TD>jar</TD><TD>2.10.0</TD><TD><A HREF="https://www.apache.org/licenses/LICENSE-2.0.txt">link from artifact (included file)</A><br></TD></TR>
+<TR>
+<TD>log4j-api-2.10.0</TD><TD>jar</TD><TD>2.10.0</TD><TD><A HREF="https://www.apache.org/licenses/LICENSE-2.0.txt">link from artifact (included file)</A><br></TD></TR>
+<TR>
+<TD>log4j-core-2.10.0</TD><TD>jar</TD><TD>2.10.0</TD><TD><A HREF="https://www.apache.org/licenses/LICENSE-2.0.txt">link from artifact (included file)</A><br></TD></TR>
+<TR>
+<TD>log4j-slf4j-impl-2.10.0</TD><TD>jar</TD><TD>2.10.0</TD><TD><A HREF="https://www.apache.org/licenses/LICENSE-2.0.txt">link from artifact (included file)</A><br></TD></TR>
+<TR>
+<TD>log4j-web-2.10.0</TD><TD>jar</TD><TD>2.10.0</TD><TD><A HREF="https://www.apache.org/licenses/LICENSE-2.0.txt">link from artifact (included file)</A><br></TD></TR>
+<TR>
+<TD>orc-core-1.5.1</TD><TD>jar</TD><TD>1.5.1</TD><TD><A HREF="licenses/LICENSE-orc-core-1.5.1.txt">included file</A></TD></TR>
+<TR>
+<TD>orc-shims-1.5.1</TD><TD>jar</TD><TD>1.5.1</TD><TD><A HREF="licenses/LICENSE-orc-shims-1.5.1.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="https://parquet.apache.org">parquet-avro-1.8.2</A></TD><TD>jar</TD><TD>1.8.2</TD><TD><A HREF="licenses/LICENSE-parquet-avro-1.8.2.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="https://parquet.apache.org">parquet-column-1.8.2</A></TD><TD>jar</TD><TD>1.8.2</TD><TD><A HREF="licenses/LICENSE-parquet-column-1.8.2.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="https://parquet.apache.org">parquet-common-1.8.2</A></TD><TD>jar</TD><TD>1.8.2</TD><TD><A HREF="licenses/LICENSE-parquet-common-1.8.2.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="https://parquet.apache.org">parquet-encoding-1.8.2</A></TD><TD>jar</TD><TD>1.8.2</TD><TD><A HREF="licenses/LICENSE-parquet-encoding-1.8.2.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="http://parquet.apache.org/">parquet-format-2.3.1</A></TD><TD>jar</TD><TD>2.3.1</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://parquet.apache.org">parquet-hadoop-1.8.2</A></TD><TD>jar</TD><TD>1.8.2</TD><TD><A HREF="licenses/LICENSE-parquet-hadoop-1.8.2.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="https://parquet.apache.org">parquet-hadoop-bundle-1.10.0</A></TD><TD>jar</TD><TD>1.10.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://parquet.apache.org">parquet-jackson-1.8.2</A></TD><TD>jar</TD><TD>1.8.2</TD><TD><A HREF="licenses/LICENSE-parquet-jackson-1.8.2.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="http://svn.apache.org/viewvc/tomcat/taglibs/standard/tags/taglibs-standard-1.2.5/impl">taglibs-standard-impl-1.2.5</A></TD><TD>jar</TD><TD>1.2.5</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://svn.apache.org/viewvc/tomcat/taglibs/standard/tags/taglibs-standard-1.2.5/spec">taglibs-standard-spec-1.2.5</A></TD><TD>jar</TD><TD>1.2.5</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>twill-api-0.6.0-incubating</TD><TD>jar</TD><TD>0.6.0-incubating</TD><TD></TD></TR>
+<TR>
+<TD>twill-common-0.6.0-incubating</TD><TD>jar</TD><TD>0.6.0-incubating</TD><TD></TD></TR>
+<TR>
+<TD>twill-core-0.6.0-incubating</TD><TD>jar</TD><TD>0.6.0-incubating</TD><TD></TD></TR>
+<TR>
+<TD>twill-discovery-api-0.6.0-incubating</TD><TD>jar</TD><TD>0.6.0-incubating</TD><TD></TD></TR>
+<TR>
+<TD>twill-discovery-core-0.6.0-incubating</TD><TD>jar</TD><TD>0.6.0-incubating</TD><TD></TD></TR>
+<TR>
+<TD>twill-zookeeper-0.6.0-incubating</TD><TD>jar</TD><TD>0.6.0-incubating</TD><TD></TD></TR>
+<TR>
+<TD>audience-annotations-0.5.0</TD><TD>jar</TD><TD>0.5.0</TD><TD><A HREF="licenses/LICENSE-audience-annotations-0.5.0.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="https://bitbucket.org/b_c/jose4j/">jose4j-0.6.4</A></TD><TD>jar</TD><TD>0.6.4</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://svn.codehaus.org/jettison/tags/jettison-1.1">jettison-1.1</A></TD><TD>jar</TD><TD>1.1</TD><TD><A HREF="licenses/LICENSE-jettison-1.1.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="http://wiki.fasterxml.com/WoodstoxStax2">stax2-api-3.1.4</A></TD><TD>jar</TD><TD>3.1.4</TD><TD><A HREF="http://www.opensource.org/licenses/bsd-license.php">The BSD License</A><br><A HREF="http://www.opensource.org/licenses/bsd-license.php">link from artifact (META-INF/maven/org.codehaus.woodstox/stax2-api/pom.xml)</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/datanucleus/${project.artifactId}">datanucleus-api-jdo-4.2.4</A></TD><TD>jar</TD><TD>4.2.4</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/datanucleus/${project.artifactId}">datanucleus-core-4.1.17</A></TD><TD>jar</TD><TD>4.1.17</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/datanucleus/${project.artifactId}">datanucleus-rdbms-4.1.19</A></TD><TD>jar</TD><TD>4.1.19</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/datanucleus/${project.artifactId}">javax.jdo-3.2.0-m3</A></TD><TD>jar</TD><TD>3.2.0-m3</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">apache-jsp-9.3.20.v20170531</A></TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://tomcat.apache.org/taglibs/standard/">apache-jstl-9.3.20.v20170531</A></TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-annotations-9.3.20.v20170531</A></TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-client-9.3.20.v20170531</A></TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-http-9.3.20.v20170531</A></TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-io-9.3.20.v20170531</A></TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>jetty-jaas-9.3.20.v20170531</TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-jndi-9.3.20.v20170531</A></TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-plus-9.3.20.v20170531</A></TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-rewrite-9.3.20.v20170531</A></TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-security-9.3.24.v20180605</A></TD><TD>jar</TD><TD>9.3.24.v20180605</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-server-9.3.24.v20180605</A></TD><TD>jar</TD><TD>9.3.24.v20180605</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-servlet-9.3.24.v20180605</A></TD><TD>jar</TD><TD>9.3.24.v20180605</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-util-9.3.24.v20180605</A></TD><TD>jar</TD><TD>9.3.24.v20180605</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-util-ajax-9.3.24.v20180605</A></TD><TD>jar</TD><TD>9.3.24.v20180605</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-webapp-9.3.24.v20180605</A></TD><TD>jar</TD><TD>9.3.24.v20180605</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-xml-9.3.24.v20180605</A></TD><TD>jar</TD><TD>9.3.24.v20180605</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://git.eclipse.org/c/jetty/org.eclipse.jetty.toolchain.git/tree/jetty-schemas">jetty-schemas-3.1</A></TD><TD>jar</TD><TD>3.1</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>websocket-api-9.3.20.v20170531</TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>websocket-client-9.3.20.v20170531</TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>websocket-common-9.3.20.v20170531</TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.eclipse.org/jetty">jetty-runner-9.3.20.v20170531</A></TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (included file)</A><br><A HREF="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html">CDDL + GPLv2 with classpath exception</A><br></TD></TR>
+<TR>
+<TD>websocket-server-9.3.20.v20170531</TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>websocket-servlet-9.3.20.v20170531</TD><TD>jar</TD><TD>9.3.20.v20170531</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>leveldbjni-all-1.8</TD><TD>jar</TD><TD>1.8</TD><TD><A HREF="http://www.opensource.org/licenses/BSD-3-Clause">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://el-spec.java.net">javax.el-3.0.0</A></TD><TD>jar</TD><TD>3.0.0</TD><TD><A HREF="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html">CDDL + GPLv2 with classpath exception</A><br><A HREF="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html">link from artifact (META-INF/maven/org.glassfish/javax.el/pom.xml)</A><br></TD></TR>
+<TR>
+<TD>hk2-api-2.5.0-b32</TD><TD>jar</TD><TD>2.5.0-b32</TD><TD><A HREF="https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>hk2-locator-2.5.0-b32</TD><TD>jar</TD><TD>2.5.0-b32</TD><TD><A HREF="https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://java.net/projects/tiger-types/sources/svn/show/tags/tiger-types-1.4">hk2-utils-2.5.0-b32</A></TD><TD>jar</TD><TD>2.5.0-b32</TD><TD><A HREF="https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="dav:http://glassfish-maven-repository.us.oracle.com/maven/repositories/glassfish/">osgi-resource-locator-1.0.1</A></TD><TD>jar</TD><TD>1.0.1</TD><TD><A HREF="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>aopalliance-repackaged-2.5.0-b32</TD><TD>jar</TD><TD>2.5.0-b32</TD><TD><A HREF="https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>javax.inject-2.5.0-b32</TD><TD>jar</TD><TD>2.5.0-b32</TD><TD><A HREF="https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>jersey-guava-2.25.1</TD><TD>jar</TD><TD>2.25.1</TD><TD><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>jersey-container-servlet-core-2.25.1</TD><TD>jar</TD><TD>2.25.1</TD><TD><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>jersey-client-2.25.1</TD><TD>jar</TD><TD>2.25.1</TD><TD><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>jersey-common-2.25.1</TD><TD>jar</TD><TD>2.25.1</TD><TD><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>jersey-server-2.25.1</TD><TD>jar</TD><TD>2.25.1</TD><TD><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>jersey-media-jaxb-2.25.1</TD><TD>jar</TD><TD>2.25.1</TD><TD><A HREF="http://glassfish.java.net/public/CDDL+GPL_1_1.html">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://jsp.java.net">javax.servlet.jsp-2.3.2</A></TD><TD>jar</TD><TD>2.3.2</TD><TD><A HREF="http://glassfish.dev.java.net/nonav/public/CDDL+GPL.html">CDDL + GPLv2 with classpath exception</A><br><A HREF="http://glassfish.dev.java.net/nonav/public/CDDL+GPL.html">link from artifact (META-INF/maven/org.glassfish.web/javax.servlet.jsp/pom.xml)</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://jamon.svn.sourceforge.net/viewvc/jamon/trunk/jamon/${artifactId}/">jamon-runtime-2.3.1</A></TD><TD>jar</TD><TD>2.3.1</TD><TD></TD></TR>
+<TR>
+<TD><A HREF="http://www.javassist.org/">javassist-3.20.0-GA</A></TD><TD>jar</TD><TD>3.20.0-GA</TD><TD><A HREF="http://www.apache.org/licenses/">Apache 2.0</A><br><A HREF="http://www.mozilla.org/MPL/MPL-1.1.html">MPL 1.1</A><br><A HREF="http://www.mozilla.org/MPL/MPL-1.1.html, http://www.gnu.org/licenses/lgpl-2.1.html, http://www.apache.org/licenses/">link from artifact (META-INF/maven/org.javassist/javassist/pom.xml)</A><br><A HREF="http://www.gnu.org/licenses/lgpl-2.1.html">LGPL 2.1</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://api.bintray.com/maven/jctools/jctools/jctools-core/;publish=1">netty-common-4.0.52.Final</A></TD><TD>jar</TD><TD>2.1.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br><A HREF="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/jruby/jcodings/issues">jcodings-1.0.18</A></TD><TD>jar</TD><TD>1.0.18</TD><TD><A HREF="http://www.opensource.org/licenses/mit-license.php">MIT License</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://jira.codehaus.org/browse/JRUBY">joni-2.1.11</A></TD><TD>jar</TD><TD>2.1.11</TD><TD><A HREF="http://www.opensource.org/licenses/mit-license.php">MIT License</A><br></TD></TR>
+<TR>
+<TD>jetty-6.1.26</TD><TD>jar</TD><TD>6.1.26</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>jetty-util-6.1.26</TD><TD>jar</TD><TD>6.1.26</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0, http://www.eclipse.org/org/documents/epl-v10.php">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD><A HREF="scm:svn:https://svn.codehaus.org/jetty/servlet-api/tags/servlet-api-2.5-20081211">servlet-api-2.5-20081211</A></TD><TD>jar</TD><TD>2.5-20081211</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD><A HREF="http://www.slf4j.org">avatica-1.11.0</A></TD><TD>jar</TD><TD>1.7.13</TD><TD><A HREF="licenses/LICENSE-avatica-1.11.0.txt">included file</A></TD></TR>
+<TR>
+<TD><A HREF="http://www.slf4j.org">slf4j-api-1.7.25</A></TD><TD>jar</TD><TD>1.7.25</TD><TD></TD></TR>
+<TR>
+<TD><A HREF="https://github.com/Terracotta-OSS/terracotta-management/">ehcache-3.3.1</A></TD><TD>jar</TD><TD>1.4.3</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache License, Version 2.0</A><br>LICENSE<br></TD></TR>
+<TR>
+<TD><A HREF="http://github.com/julianhyde/sqlline">sqlline-1.3.0</A></TD><TD>jar</TD><TD>1.3.0</TD><TD><A HREF="http://opensource.org/licenses/BSD-3-Clause">Modified BSD License</A><br></TD></TR>
+<TR>
+<TD>ant-1.9.1</TD><TD>jar</TD><TD></TD><TD><A HREF="licenses/LICENSE-ant-1.9.1.txt">included file</A></TD></TR>
+<TR>
+<TD>ant-launcher-1.9.1</TD><TD>jar</TD><TD></TD><TD><A HREF="licenses/LICENSE-ant-launcher-1.9.1.txt">included file</A></TD></TR>
+<TR>
+<TD>aopalliance-1.0</TD><TD>jar</TD><TD></TD><TD></TD></TR>
+<TR>
+<TD>asm-5.0.4</TD><TD>jar</TD><TD>5.0.4</TD><TD></TD></TR>
+<TR>
+<TD>asm-commons-5.0.1</TD><TD>jar</TD><TD>5.0.1</TD><TD></TD></TR>
+<TR>
+<TD>asm-tree-5.0.1</TD><TD>jar</TD><TD>5.0.1</TD><TD></TD></TR>
+<TR>
+<TD>bcprov-jdk16-1.45</TD><TD>jar</TD><TD></TD><TD><A HREF="licenses/LICENSE-bcprov-jdk16-1.45.txt">included file</A></TD></TR>
+<TR>
+<TD>commons-compiler-2.7.6</TD><TD>jar</TD><TD>2.7.6</TD><TD><A HREF="http://dist.codehaus.org/janino/new_bsd_license.txt">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>derby-10.14.1.0</TD><TD>jar</TD><TD>10.14.1000000.1808820</TD><TD><A HREF="licenses/LICENSE-derby-10.14.1.0.txt">included file</A></TD></TR>
+<TR>
+<TD>disruptor-3.3.6</TD><TD>jar</TD><TD>3.3.6</TD><TD></TD></TR>
+<TR>
+<TD>ecj-4.4.2</TD><TD>jar</TD><TD>3.10.2.v20150120-1634</TD><TD></TD></TR>
+<TR>
+<TD>fastutil-6.5.7</TD><TD>jar</TD><TD></TD><TD></TD></TR>
+<TR>
+<TD>groovy-all-2.4.11</TD><TD>jar</TD><TD>2.4.11</TD><TD><A HREF="licenses/LICENSE-groovy-all-2.4.11.txt">included file</A></TD></TR>
+<TR>
+<TD>gson-2.2.4</TD><TD>jar</TD><TD>2.2.4</TD><TD></TD></TR>
+<TR>
+<TD>guice-4.0</TD><TD>jar</TD><TD>4.0.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>guice-assistedinject-3.0</TD><TD>jar</TD><TD>3.0.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>guice-servlet-4.0</TD><TD>jar</TD><TD>4.0.0</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>ivy-2.4.0</TD><TD>jar</TD><TD>2.4.0.final_20141213170938</TD><TD><A HREF="licenses/LICENSE-ivy-2.4.0.txt">included file</A></TD></TR>
+<TR>
+<TD>jackson-core-asl-1.9.13</TD><TD>jar</TD><TD>1.9.13</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>jackson-jaxrs-1.9.2</TD><TD>jar</TD><TD>1.9.2</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>jackson-mapper-asl-1.9.13</TD><TD>jar</TD><TD>1.9.13</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>jackson-xc-1.9.2</TD><TD>jar</TD><TD>1.9.2</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>janino-2.7.6</TD><TD>jar</TD><TD>2.7.6</TD><TD><A HREF="http://dist.codehaus.org/janino/new_bsd_license.txt">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+<TR>
+<TD>javax.inject-1</TD><TD>jar</TD><TD></TD><TD></TD></TR>
+<TR>
+<TD>jaxb-impl-2.2.3-1</TD><TD>jar</TD><TD></TD><TD></TD></TR>
+<TR>
+<TD>jdo-api-3.0.1</TD><TD>jar</TD><TD>3.0.1</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.html">link from artifact (included file)</A><br></TD></TR>
+<TR>
+<TD>jsp-api-2.1</TD><TD>jar</TD><TD></TD><TD></TD></TR>
+<TR>
+<TD>jta-1.1</TD><TD>jar</TD><TD></TD><TD><A HREF="licenses/LICENSE-jta-1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>kafka-clients-2.1.0-cp2</TD><TD>jar</TD><TD></TD><TD><A HREF="licenses/LICENSE-kafka-clients-2.1.0-cp2.txt">included file</A></TD></TR>
+<TR>
+<TD>libfb303-0.9.3</TD><TD>jar</TD><TD></TD><TD></TD></TR>
+<TR>
+<TD>libthrift-0.9.3</TD><TD>jar</TD><TD>0.9.3</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>lz4-java-1.5.0</TD><TD>jar</TD><TD>0</TD><TD></TD></TR>
+<TR>
+<TD>oro-2.0.8</TD><TD>jar</TD><TD></TD><TD><A HREF="licenses/LICENSE-oro-2.0.8.txt">included file</A></TD></TR>
+<TR>
+<TD>snappy-java-1.1.1.3</TD><TD>jar</TD><TD>1.1.1.3</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>spotbugs-annotations-3.1.5</TD><TD>jar</TD><TD>3.1.5</TD><TD></TD></TR>
+<TR>
+<TD>stax-api-1.0.1</TD><TD>jar</TD><TD></TD><TD></TD></TR>
+<TR>
+<TD>transaction-api-1.1</TD><TD>jar</TD><TD></TD><TD><A HREF="licenses/LICENSE-transaction-api-1.1.txt">included file</A></TD></TR>
+<TR>
+<TD>velocity-1.5</TD><TD>jar</TD><TD></TD><TD><A HREF="licenses/LICENSE-velocity-1.5.txt">included file</A></TD></TR>
+<TR>
+<TD>xz-1.5</TD><TD>jar</TD><TD>1.5</TD><TD></TD></TR>
+<TR>
+<TD>zkclient-0.10</TD><TD>jar</TD><TD>0.10</TD><TD></TD></TR>
+<TR>
+<TD>zookeeper-3.4.13</TD><TD>jar</TD><TD>3.4.13</TD><TD><A HREF="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache 2.0</A><br></TD></TR>
+<TR>
+<TD>zstd-jni-1.3.7-1</TD><TD>jar</TD><TD>1.3.7.1</TD><TD><A HREF="https://opensource.org/licenses/BSD-2-Clause;description=BSD 2-Clause License">link from artifact (META-INF/MANIFEST.MF)</A><br></TD></TR>
+</TBODY>
+</TABLE>
+</BODY><HTML>
